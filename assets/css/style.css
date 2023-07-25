@@ -3,12 +3,6 @@
     --bsf-headfoot: #2C3E50;
     --bsf-jumboabout:#1ABC9C;
     --bsf-around: #3A546D;
-    --bsf-port1: #BA4B63;
-    --bsf-port2: #1EA4B6;
-    --bsf-port3: #140F0F;
-    --bsf-port4: #1C83C1;
-    --bsf-port5: #0E38B5;
-    --bsf-port6: #CCB2A3;
 }
 
 header {
@@ -16,12 +10,15 @@ header {
     height: 70px;
 }
 
-.jumbotron {
+.jumbotron,
+.about {
     background-color: var(--bsf-jumboabout);
 }
 
-img .jumbotron {
-    width: 50%;
+.about .card,
+.jumbotron .card {
+    background-color: var(--bsf-jumboabout);
+    border: var(--bsf-jumboabout);
 }
 
 .line {
@@ -29,4 +26,10 @@ img .jumbotron {
     width: 15%;
     border-radius: 20px;
 }
+
+
+
+
+
+
 
