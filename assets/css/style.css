@@ -39,12 +39,6 @@ h1 {
     border: var(--bsf-around);
 }
 
-.info i {
-    border: 1px solid white;
-    border-radius: 50%;
-    margin: 0 .5rem;
-}
-
 footer {
     background-color: var(--bsf-headfoot);
 }
@@ -53,10 +47,11 @@ footer {
     color: var(--bsf-jumboabout);
 }
 
-::placeholder {
-    color: red;
+.msg_area {
+    height: 10rem!important;
 }
 
-.msg_area {
-    height: 5rem;
+.media {
+    height: 40px;
+    width: 40px;    
 }

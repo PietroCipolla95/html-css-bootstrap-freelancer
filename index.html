@@ -11,13 +11,13 @@
   <body>
     <header>
         <div class="container-xl">
-            <nav class="navbar navbar-expand-lg py-3 m-xl-auto"> <!-- Navbar -->
+            <nav class="navbar navbar-expand-sm py-3 m-xl-auto"> <!-- Navbar -->
                 <div class="container-fluid">
                   <a class="navbar-brand text-light fw-bolder fs-3" href="#">START BOOTSTRAP</a>
                   <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse flex-md-grow-0" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse flex-sm-grow-0" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link text-light fw-bold active" aria-current="page" href="portfolio">PORTFOLIO</a>
@@ -68,32 +68,32 @@
                     <div class="line bg-black"></div>
                 </div>
                 <div class="row gy-3">
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
                         <div class="card rounded-5">
                             <img class="rounded-5" src="./assets/img/cabin.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
                         <div class="card rounded-5">
                             <img class="rounded-5" src="./assets/img/cake.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
                         <div class="card rounded-5">
                             <img class="rounded-5" src="./assets/img/circus.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
                         <div class="card rounded-5">
                             <img class="rounded-5" src="./assets/img/game.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
                         <div class="card rounded-5">
                             <img class="rounded-5" src="./assets/img/safe.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
                         <div class="card rounded-5">
                             <img class="rounded-5" src="./assets/img/submarine.png" alt="">
                         </div>
@@ -114,15 +114,15 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-6 col-xl-5 ms-xl-5">
-                                <div class="card px-md-0 text-center">
+                            <div class="col-12 col-sm-6 col-xl-5 ms-xl-5">
+                                <div class="card px-sm-0 text-center">
                                     <p class="text-start text-light">
                                         Freelancer is a free bootstrap theme created by Star Bootstrap. The download includes complete sources files including HTML, CSS and JavaScript as well as optional LESS stylesheet for easy customization.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-5">
-                                <div class="card px-md-0 text-center">
+                            <div class="col-12 col-sm-6 col-xl-5">
+                                <div class="card px-sm-0 text-center">
                                     <p class="text-start text-light">
                                         Wheter you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template its the perfect starting point!
                                     </p>                            
@@ -162,8 +162,8 @@
                             <label for="floatingInput">Phone number</label>
                         </div>                        
                         <div class="form-floating mb-3"> <!-- message -->
-                            <textarea class="form-control border-0 border-bottom rounded-0 border-dark" id="textarea" placeholder="Message"></textarea>
-                            <label for="textarea" class="form-label msg_area">Message</label>
+                            <textarea class="form-control border-0 border-bottom rounded-0 border-dark msg_area" id="textarea" placeholder="Message"></textarea>
+                            <label for="textarea" class="form-label">Message</label>
                         </div>
                         <button type="submit" class="btn btn-primary btn_jumbo my-4">Send</button>
                     </form>
@@ -172,8 +172,8 @@
         </section>
         <section class="info"> <!-- info -->
             <div class="container">
-                <div class="row p-4 align-items-baseline justify-content-md-evenly">
-                    <div class="col-12 col-md-4 text-center my-4">
+                <div class="row py-4 align-items-baseline justify-content-sm-evenly">
+                    <div class="col-12 col-sm-4 text-center my-4">
                         <div class="card text-light">
                             <h4>
                                 LOCATION
@@ -181,20 +181,28 @@
                             <span>2215 John Daniel Drive Clark, MO 54243</span>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 text-center">
+                    <div class="col-12 col-sm-4 text-center">
                         <div class="card text-light">
-                            <h4>
+                            <h4 class="py-2">
                                 AROUND THE WEB
                             </h4>
-                            <span>
-                                <i class="fa-brands fa-facebook-f px-2 py-1 border-light"></i>
-                                <i class="fa-brands fa-google-plus-g px-1 py-1"></i>
-                                <i class="fa-brands fa-twitter p-1"></i>
-                                <i class="fa-brands fa-linkedin-in p-1"></i>
-                            </span>
+                            <div class="row w-75 m-auto justify-content-evenly">
+                                <div class="col-2 media d-flex justify-content-center align-items-center border border-light rounded-circle">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="col-2 media d-flex justify-content-center align-items-center border border-light rounded-circle">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </div>
+                                <div class="col-2 media d-flex justify-content-center align-items-center border border-light rounded-circle">
+                                    <i class="fa-brands fa-twitter p-1"></i>
+                                </div>
+                                <div class="col-2 media d-flex justify-content-center align-items-center border border-light rounded-circle">
+                                    <i class="fa-brands fa-linkedin-in p-1"></i>
+                                </div>  
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 text-center my-4">
+                    <div class="col-12 col-sm-4 text-center my-4">
                         <div class="card text-light">
                             <h4>
                                 ABOUT FREELANCER
