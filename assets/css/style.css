@@ -7,12 +7,15 @@
 
 header {
     background-color: var(--bsf-headfoot);
-    height: 70px;
 }
 
 .jumbotron,
 .about {
     background-color: var(--bsf-jumboabout);
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 .about .card,
