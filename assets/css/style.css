@@ -56,3 +56,7 @@ footer {
 ::placeholder {
     color: red;
 }
+
+.msg_area {
+    height: 5rem;
+}
