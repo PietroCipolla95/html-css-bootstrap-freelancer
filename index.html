@@ -13,32 +13,32 @@
         <div class="container-xl">
             <nav class="navbar navbar-expand-lg py-3 m-xl-auto"> <!-- Navbar -->
                 <div class="container-fluid">
-                  <a class="navbar-brand text-light fw-bolder" href="#">START BOOTSTRAP</a>
+                  <a class="navbar-brand text-light fw-bolder fs-3" href="#">START BOOTSTRAP</a>
                   <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse flex-md-grow-0" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link text-light active" aria-current="page" href="portfolio">PORTFOLIO</a>
+                        <a class="nav-link text-light fw-bold active" aria-current="page" href="portfolio">PORTFOLIO</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-light active" aria-current="page" href="about">ABOUT</a>
+                        <a class="nav-link text-light fw-bold mx-4 active" aria-current="page" href="about">ABOUT</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-light active" aria-current="page" href="contact">CONTACT</a>
+                        <a class="nav-link text-light fw-bold active" aria-current="page" href="contact">CONTACT</a>
                       </li>
                     </ul>
                   </div>
                 </div>
-              </nav>
+            </nav>
         </div>    
     </header>
     <main>
         <section class="jumbotron py-4"> <!-- Jumbotron -->
             <div class="container text-center text-light">
                 <div class="row">
-                    <div class="col-6 col-xl-4 m-auto">
+                    <div class="col-6 col-xl-3 m-auto">
                         <div class="card">
                             <img src="./assets/img/avatar.svg" alt="" class="img-fluid">
                         </div>
@@ -52,7 +52,7 @@
                     <i class="fa-solid fa-star fa-2xl px-4"></i>
                     <div class="line bg-light"></div>
                 </div>
-                <div class="competences fs-6"> <!-- competences -->
+                <div class="competences fs-3 my-3"> <!-- competences -->
                     <span>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span>
                 </div>
             </div>
@@ -112,18 +112,22 @@
                     <div class="line bg-light"></div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6 px-5">
-                        <div class="card px-5 px-md-0">
-                            <p class="text-start text-light">
-                                Freelancer is a free bootstrap theme created by Star Bootstrap. The download includes complete sources files including HTML, CSS and JavaScript as well as optional LESS stylesheet for easy customization.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 px-5">
-                        <div class="card px-5 px-md-0">
-                            <p class="text-start text-light">
-                                Wheter you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template its the perfect starting point!
-                            </p>                            
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 col-xl-5 ms-xl-5">
+                                <div class="card px-md-0 text-center">
+                                    <p class="text-start text-light">
+                                        Freelancer is a free bootstrap theme created by Star Bootstrap. The download includes complete sources files including HTML, CSS and JavaScript as well as optional LESS stylesheet for easy customization.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-5">
+                                <div class="card px-md-0 text-center">
+                                    <p class="text-start text-light">
+                                        Wheter you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template its the perfect starting point!
+                                    </p>                            
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button class="btn btn-outline-light text-center m-auto w-25 my-5" type="button">
@@ -133,8 +137,38 @@
                 </div>
             </div>    
         </section>
-        <section class="contact"> <!-- contact me -->
-
+        <section class="contact mt-5"> <!-- contact me -->
+            <div class="container justify-content-center">
+                <h2 class="text-center pb-3">
+                    CONTACT ME
+                </h2>
+                <div class="star-spacer py-3 d-flex justify-content-center"> <!-- star spacer -->
+                    <div class="line bg-dark"></div>
+                    <i class="fa-solid fa-star fa-2xl px-4"></i>
+                    <div class="line bg-dark"></div>
+                </div>
+                <div class="col-10 col-xl-12 m-auto px-5 py-3"> <!-- form -->
+                    <form>
+                        <div class="mb-3"> <!-- name -->
+                          <label for="name" class="form-label"></label>
+                          <input type="name" class="form-control border-0 border-bottom rounded-0 border-dark " id="Name" aria-describedby="nameHelp" placeholder="Name">
+                        </div>
+                        <div class="mb-3"> <!-- email -->
+                          <label for="email" class="form-label"></label> 
+                          <input type="email" class="form-control border-0 border-bottom rounded-0 border-dark" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="mb-3"> <!-- phone number -->
+                          <label for="phone" class="form-label"></label>
+                          <input type="phone" class="form-control border-0 border-bottom rounded-0 border-dark" id="phone" aria-describedby="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3"> <!-- message -->
+                            <label for="textarea" class="form-label"></label>
+                            <textarea class="form-control border-0 border-bottom rounded-0 border-dark" id="textarea" placeholder="Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn_jumbo my-4">Send</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <section class="info"> <!-- info -->
             <div class="container">
@@ -142,7 +176,7 @@
                     <div class="col-12 col-md-4 text-center my-4">
                         <div class="card text-light">
                             <h4>
-                                Location
+                                LOCATION
                             </h4>
                             <span>2215 John Daniel Drive Clark, MO 54243</span>
                         </div>
@@ -165,7 +199,7 @@
                             <h4>
                                 ABOUT FREELANCER
                             </h4>
-                            <span class="fs-4">
+                            <span>
                                 Freelance is a free to use, open source Bootstrap theme created by
                                 <span class="start_bs">Start Bootstrap</span>
                             </span>
@@ -180,16 +214,6 @@
             Copyright © Your Website 2019
         </span>
     </footer>
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
